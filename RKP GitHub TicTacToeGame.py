@@ -1,6 +1,6 @@
 # Initiated: 7/15/19 2035 PST
 # Completed: 7/23/19 2244 PST
-# Updated: 7/23/19 2244 PST
+# Updated: 8/12/19 2246 PST
 
 # This is the game board positions which will be used to place the X's and the O's
 game_board = [
@@ -8,6 +8,16 @@ game_board = [
     "-", "-", "-",
     "-", "-", "-"
 ]
+
+# This shows what the position layout is for the game moves
+tic_tac_toe_positions = ("___________________________________________________________\n\n"
+    "This is the layout for the moves you can make in the game\n\n"
+    "1" + " | " + "2" + " | " + "3\n"
+    "4" + " | " + "5" + " | " + "6\n"
+    "7" + " | " + "8" + " | " + "9\n\n"
+    "___________________________________________________________\n\n"
+)
+
 
 # This dictionary shows the user all open positions on game_board.  The index starts at 1 for the user's convenience
 # I used a dictionary to make user interaction easier.  With this setup, the user does not have to begin counting
@@ -255,6 +265,8 @@ def play_game():
     player_name()
 
     print("\n\n")
+
+    print(tic_tac_toe_positions)
 
     display_board()
 
