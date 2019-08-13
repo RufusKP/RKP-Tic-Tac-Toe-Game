@@ -111,7 +111,7 @@ def tie_game():
     print("\nGreat Game!  That is a tie!")
 
 
-# This funciton is the heart of the game.  It goes through the loop of turns and determines whether a player has won
+# This function is the heart of the game.  It goes through the loop of turns and determines whether a player has won
 # or if the game cannot continue (that is, it has ended in a tie).
 def turn_loop():
     turns_left = 9
